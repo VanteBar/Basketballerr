@@ -181,22 +181,30 @@ body{
 .header_list{
     display: flex;
     flex-wrap: wrap;
+    align-items: center; 
 }
 
 .header_item{
     display: flex;
     margin-right: 32px; 
-    align-items: center;
+}
+
+#points {
+    width: 19px;
+    height: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #2A2D46;
+    display: flex;
+    align-items: center; 
 }
 
 .header_item:last-child{
     margin-right: 0; 
 }
 
-#points{
-    width: 19px;
-    height: 3px;
-}
+
 
 .header-link{
     font-size: 12px;
@@ -527,7 +535,6 @@ body{
 }
 
 .HR_slider{
-    /*width: 100%;*/
     display: flex;
     flex:none;
 }
@@ -782,30 +789,111 @@ body{
 /*//////////////////////////// C A T A L O G //////////////////////////*/
 
 .catalog{
+    display: flex;
+    justify-content: center;
+}
+
+#catalog_content{
+    width: 1171px;
+}
+
+.catalog-content-cards{
+    display: flex;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
-.wrapper_catalog{
+/*------------------------------------------------------------------------------*/
+/*------------------------------ C A R D S -------------------------------------*/
+.card{
+    width: 270px;
+    height: 417px;
+    margin: 10px;
+    padding-top: 15px;
+    box-shadow: -1px 1px 8px 3px rgba(34, 60, 80, 0.2);
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #2A2D46;
+}
+
+.card-img{
+    width: 191px;
+    height: 203px;
+}
+
+.card-description{
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #2A2D46;
+}
+
+.card-strikethrough-text{
+    text-decoration: line-through;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    padding-top: 30px;
+}
+
+.card-current-price-and-vector{
+    display: flex;
+    width: 230px;
+    padding-top: 2px;
+}
+
+.card-current-price{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #3145ff;
+    flex-grow: 1;
+}
+
+.card-vector-img{
+    width: 32px;
+    height: 22px;
+    flex-grow: 0;
+    margin-top: 3px;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/*.wrapper_catalog{
     max-width: 1171px;
     margin: 0 auto;
     display: flex;
-    justify-content: left;
-}
+    
+}*/
 
 .catalog_content{
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 40px;*/
 }
 
-.catalog_content>h2{
+/*.catalog_content>h2{
     margin-left: 15px;
-}
+}*/
 
-.catalog_nav-container1{
+/*.catalog_nav-container1{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -838,18 +926,18 @@ body{
 
 .catalog_item:last-child{
     margin-right: 0; 
-}
+}*/
 
 
  /*/////////////////////////// A B O U T   S T O R E////////////////////////*/
 
  .wrap0_about_store{
     max-width: 1292px;
-    margin: 0 auto;
+    margin: 50px;
     display: flex;
+    justify-content: center;
     top: 2863px;
     left: 215px;
-    justify-content: left;
     height: 250px;
  }
  
@@ -893,6 +981,8 @@ body{
 .ab_st_list{
     display: flex;
     flex-wrap: wrap;
+    width: 1160px;
+    justify-content: space-between;
 }
 
 .AS_item{
