@@ -47,22 +47,32 @@
                                     <a href="##" class="header-link" id= "points">. . .</a>
                                 </li>
                                 <li class="header_item" id="number">
-                                    8(908)45-32-7798
+                                    <p>8(908)45-32-7798</p>
+                                    
                                 </li>
-                                <li class="header_item" >
-                                    <a href="##">
-                                        <div class="header-link2">
-                                            <div class="to-order">
-                                                Заказать звонок
+                                <li class="header_item">
+                                    <div id="header_item_to-order_border">
+                                        <a href="##">
+                                            <div class="header-link2">
+                                                <div class="to-order">
+                                                    <p>Заказать звонок</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </li>
                                 <li class="header_item" id="basket">
                                     <div class="header-bask">
                                         <img src="images/bask.jpg" alt="" class="header_nav_bask">
                                         3 243 руб.
-                                        <img src="images/Vector 1.svg" alt="" class="header-vector">
+                                        <img src="images/Vector 1.svg" alt="" class="header-vector" id="togglePopup">
+                                    </div>
+                                    <!-- Popup окно -->
+                                    <div class="popup" id="popupMenu">
+                                        <ul>
+                                            <li><a href="#profile">Профиль</a></li>
+                                            <li><a href="#cart">Корзина</a></li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>
@@ -79,7 +89,7 @@
             <div class="offer_const">
                 <p id="txt_h1">Оригинальные и дешевые товары для спортсменов</p>
                 <p id="content">Мы собрали настоящие вещи от лучших брендов, 
-                    чтобы порадовать вас качетсвенным товаром
+                    чтобы порадовать вас качественным товаром
                 </p>
                 <a href="##">
                     <div class="first_screen_btn">
@@ -265,61 +275,58 @@
         
         
         <div class="footer">
-            <div class="footer_wrapper">
-                <div class="footer_content">
+            <div class="footer_content">
                     
-                    <div class="footer_logo">
-                        <a href="##" class="footer_logo_link">
-                            <img src="images/footer_logo.svg" alt="" class="footer_logo_pic">
-                            <div class="footer_logo_txt">
-                                <p class="footer_logo_txt"><b>БАСКЕТБОЛЕР</b></p>
-                                <p>Магазин баскетбольных товаров</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class='nav-container'>
-                        <nav class="footer_nav">
-                            <ul class="footer_list">
-                                <li class="footer_item">
-                                    <a href="##" class="footer-link">Мячи</a>
-                                </li>
-                                <li class="footer_item">
-                                    <a href="##" class="footer-link">Кроссовки</a>                           
-                                </li>
-                                <li class="footer_item">
-                                    <a href="##" class="footer-link">Майки</a>
-                                </li>
-                                <li class="footer_item">
-                                    <a href="##" class="footer-link">Шорты</a>
-                                </li>
-                                <li class="footer_item">
-                                    <a href="##" class="footer-link" id ="footer_points">. . .</a>
-                                </li>
-                                
-                                <li class="footer_item" id="arrow">
-                                    <div class="footer_arrow">
-                                        <a href="#start_of_the_page">
-                                            <img src="images/arrow.svg" alt="">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="footer_item" id="footer_number">
-                                    8(908)45-32-7798
-                                </li>
-                                <li class="footer_item" >
-                                    <a href="##">
-                                        <div class="header-link2">
-                                            <div class="to-order">
-                                                Заказать звонок
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                <div class="footer_logo">
+                    <a href="##" class="footer_logo_link">
+                        <img src="images/footer_logo.svg" alt="" class="footer_logo_pic">
+                        <div class="footer_logo_txt">
+                            <p class="footer_logo_txt"><b>БАСКЕТБОЛЕР</b></p>
+                            <p>Магазин баскетбольных товаров</p>
+                        </div>
+                    </a>
                 </div>
-                    
+                
+                <div class='nav-container'>
+                    <nav class="footer_nav">
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="##" class="footer-link">Мячи</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="##" class="footer-link">Кроссовки</a>                           
+                            </li>
+                            <li class="footer_item">
+                                <a href="##" class="footer-link">Майки</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="##" class="footer-link">Шорты</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="##" class="footer-link" id ="footer_points">. . .</a>
+                            </li>
+                            
+                            <li class="footer_item" id="arrow">
+                                <div class="footer_arrow">
+                                    <a href="#start_of_the_page">
+                                        <img src="images/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="footer_item" id="footer_number">
+                                8(908)45-32-7798
+                            </li>
+                            <li class="footer_item" >
+                                <a href="##">
+                                    <div class="header-link2">
+                                        <div class="to-order">
+                                            Заказать звонок
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
             </div>
         </div>
     </div>

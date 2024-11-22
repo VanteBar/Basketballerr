@@ -114,6 +114,8 @@ body{
     font-style: normal;
     font-size: 16px;
     font-weight: normal;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
 }
 
 /*/////////////////////////// H E A D E R ////////////////////////////////////*/
@@ -182,7 +184,9 @@ body{
 }
 
 .header_item{
+    display: flex;
     margin-right: 32px; 
+    align-items: center;
 }
 
 .header_item:last-child{
@@ -219,18 +223,24 @@ body{
 
 .to-order{
     color: #EB2D66;
-    margin-top: 0;
-    padding: 7px;
-    border: 1px solid;
-    border-color: #EB2D66;
     font-size: 13px;
     font-weight: 700;
     line-height: 13px;
     letter-spacing: 0em;
-    
+    display: flex;
+}
+
+#header_item_to-order_border{
+    border: 1px solid #EB2D66;
+    padding: 5px 10px; 
+    display: flex;
+    align-items: center;      
+    justify-content: center;   
+    height: 100%;  
 }
 
 .header-link2{
+    display: flex;
     text-decoration: none;
 }
 
@@ -257,6 +267,50 @@ body{
     height: 6px;
     margin-top: 6px;
 }
+/*------------------------------------------------------------------------------*/
+/*----------------------------- P O P U P  -------------------------------------*/
+.popup {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 120px; 
+    margin-left: 40px;
+    z-index: 100; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    opacity: 0;
+    transform: translateY(-10px); 
+}
+
+.popup.show {
+    display: block; 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup li {
+    padding: 5px 0;
+}
+
+.popup li a {
+    text-decoration: none;
+    color: #2A2D46;
+}
+
+.popup li a:hover {
+    color: #EB2D66;
+}
+
+
+/*------------------------------------------------------------------------------*/
 
 /*/////////////////////////F I R S T   S C R E E N////////////////////////////*/
 
@@ -303,6 +357,7 @@ body{
     display: inline-block;
     text-decoration: none;
     text-align: center;
+    background-color: #EB2D66;
 }
 
 .watch_catalog{
@@ -314,6 +369,7 @@ body{
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
+    box-shadow: 10px 10px 8px 0px rgba(252, 25, 115, 0.15);
 }
 
 #watch_catalog_txt{
@@ -323,7 +379,6 @@ body{
     margin-left: 42px;
 }
 /*////////////////////////// C O N T E N T 1 /////////////////////////////////*/
-
 .cross-back{
     width: 515px;
 }
@@ -626,18 +681,18 @@ body{
     /*//////////////////////////// F O O T E R ///////////////////////////*/
 
 .footer{
-    width: 1600px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 276px;
-    top: 3103px;
     background: #343A62;
-    margin-top: 120px;
 }
 
 .footer_wrapper{
     max-width: 1292px;
     margin: 0 auto;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .footer_content{
@@ -647,7 +702,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-top: 130px;
 }
 
 .footer_logo{
@@ -796,6 +850,7 @@ body{
     top: 2863px;
     left: 215px;
     justify-content: left;
+    height: 250px;
  }
  
  .about_store{
